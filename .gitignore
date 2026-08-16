@@ -1,0 +1,29 @@
+# Compiled binary
+bin/
+
+# Anything personal. photosync keeps all of this in ~/.photosync by default, so
+# it should never appear here — these rules exist so that pointing --state at
+# the working tree, or copying a report in to look at, cannot leak anything.
+
+# Credentials
+client_secret*.json
+token.json
+*.pem
+
+# Your own configuration (config.example.json is the committed template)
+config.json
+config.local.json
+
+# Transfer state and output: these name every file in your archive
+photosync.db
+*.db
+*.db-wal
+*.db-shm
+report.html
+manifest.csv
+snapshots/
+
+# Local scratch
+*.heic.tmp
+photosync-convert/
+.DS_Store

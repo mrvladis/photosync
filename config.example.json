@@ -1,0 +1,11 @@
+{
+  "_comment": "Copy to ~/.photosync/config.json and edit. Every value is optional; flags override the file. Your real config.json is gitignored, as are the credentials and the journal that sit beside it.",
+
+  "source": "Pictures/Camera Roll",
+  "target": "Google Photos",
+  "account": "you@gmail.com",
+  "album_prefix": "Camera Roll",
+
+  "include_resized": true,
+  "media_only": true
+}
